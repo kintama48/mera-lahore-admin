@@ -1,0 +1,184 @@
+.ant-layout-sider-trigger {
+    background-color: #ffffff !important;
+    color: black !important;
+    box-shadow: inset 0px 1px 0px #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0px !important;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-root.ant-menu-inline,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light
+> .ant-menu.ant-menu-root.ant-menu-inline,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-root.ant-menu-vertical,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light
+> .ant-menu.ant-menu-root.ant-menu-vertical
+> .ant-menu.ant-menu-root.ant-menu-vertical {
+    box-shadow: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-affix-wrapper {
+    /* border-radius: 0px;  */
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-divider-horizontal {
+    margin-top: 12px !important;
+}
+
+.ant-menu-item.ant-menu-item-only-child {
+    padding-inline: 0px;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-search
+.ant-input-search-button {
+    display: flex;
+    align-items: center;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-select-single
+.ant-select-selector {
+    /* border-radius: 0px; */
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-card .ant-card-body {
+    padding: 18px 18px 0px;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-card {
+    /* border-radius: 0px; */
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-card .ant-card-cover img {
+    /* border-radius: 0px; */
+}
+
+.ant-table {
+    overflow: auto;
+}
+
+:where(.css-1e3x2xa).ant-btn-primary {
+    background-color: #1677ff !important;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs
+.ant-tabs-tab.ant-tabs-tab-disabled {
+    cursor: pointer;
+    color: black;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-card-bordered {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/*.grid-container {*/
+/*  !* User input values *!*/
+/*  --grid-layout-gap: 20px;*/
+/*  --grid-column-count: 3;*/
+/*  --grid-item--min-width: 200px;*/
+
+/*  !* Override minimum width for small screens *!*/
+/*  @media only screen and (max-width: 600px) {*/
+/*    --grid-item--min-width: 150px;*/
+/*  }*/
+
+/*  !* Calculated values *!*/
+/*  --gap-count: calc(var(--grid-column-count) - 1);*/
+/*  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));*/
+/*  --grid-item--max-width: calc(*/
+/*  (100% - var(--total-gap-width)) / var(--grid-column-count)*/
+/*  );*/
+
+/*  !* Grid container properties *!*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(*/
+/*  auto-fill,*/
+/*  minmax(*/
+/*  max(var(--grid-item--min-width), var(--grid-item--max-width)),*/
+/*  1fr*/
+/*  )*/
+/*  );*/
+/*  grid-gap: var(--grid-layout-gap);*/
+/*}*/
+
+.even-row {
+    background-color: #ffffff; /* Set the background color for even rows */
+}
+
+.odd-row {
+    background-color: #f5f5f5; /* Set the background color for odd rows */
+}
+
+.card {
+    position: relative;
+}
+
+.card-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.dot-red {
+    background-color: red;
+}
+
+.dot-green {
+    background-color: green;
+}
+
+.dot-yellow {
+    background-color: yellow;
+}
+
+.dot-gray {
+    background-color: gray;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    background: white;
+}
+
+.status-box.dot-red {
+    border: 2px solid red;
+}
+
+.status-box.dot-green {
+    border: 2px solid green;
+}
+
+.status-box.dot-yellow {
+    border: 2px solid yellow;
+}
+
+.status-box.dot-gray {
+    border: 2px solid gray;
+}
+
+.card-content {
+    padding: 8px;
+}
+

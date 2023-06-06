@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import 'antd/dist/reset.css'
+import './antd.css'
+import { Provider } from 'react-redux'
+import { persistor, store } from './@store/store'
+import { PersistGate } from 'redux-persist/integration/react'
+import router from './browserRouter'
+
+import { RouterProvider } from 'react-router-dom'
+import { ConfigProvider } from 'antd'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <>
+        <ConfigProvider
+            theme={{
+              token: {
+                colorPrimary: '#1677ff',
+              },
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}>
+              <RouterProvider router={router} />
+            </PersistGate>
+          </Provider>
+        </ConfigProvider>
+      </>
+  )
 }
 
-export default App;
+export default App
