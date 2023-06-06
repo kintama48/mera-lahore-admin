@@ -5,7 +5,7 @@ const LoginSignUp = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <Card
-        className="w-[400px]"
+        className="w-[400px] shadow-xl"
         cover={
           <img
             src="/assets/logo.png"

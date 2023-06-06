@@ -65,27 +65,36 @@ function LoginComponent() {
             <Form.Item name="remember" valuePropName="checked" noStyle>
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
-
-            <a
-              className="login-form-forgot text-primary"
-              href="/reset-password"
+            <Button
+                loading={isLoading}
+                type="primary"
+                htmlType="submit"
+                className="bg-blue-500"
+                // className="login-form-button"
             >
-              Forgot password?
-            </a>
+              Log in
+            </Button>
+
+            {/*<a*/}
+            {/*  className="login-form-forgot text-primary"*/}
+            {/*  href="/reset-password"*/}
+            {/*>*/}
+            {/*  Forgot password?*/}
+            {/*</a>*/}
           </div>
         </Form.Item>
 
-        <Form.Item>
-          <Button
-            loading={isLoading}
-            type="primary"
-            htmlType="submit"
-            className="bg-blue-500"
-            // className="login-form-button"
-          >
-            Log in
-          </Button>
-        </Form.Item>
+        {/*<Form.Item>*/}
+        {/*  <Button*/}
+        {/*    loading={isLoading}*/}
+        {/*    type="primary"*/}
+        {/*    htmlType="submit"*/}
+        {/*    className="bg-blue-500"*/}
+        {/*    // className="login-form-button"*/}
+        {/*  >*/}
+        {/*    Log in*/}
+        {/*  </Button>*/}
+        {/*</Form.Item>*/}
       </Form>
     </div>
   );
