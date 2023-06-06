@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "antd/es/layout/layout";
 import { Button } from "antd";
-import logout from "../../utils/utils";
+import { logout } from "../../utils/utils";
 
 function NavBar() {
   return (
@@ -10,9 +10,9 @@ function NavBar() {
         <img src="/assets/logo.png" alt="mera-lahore-logo" className="w-[130px] h-[100px]" />
       </div>
         <p className="m-0 hidden md:block">Admin Panel</p>
-        <Button className="text-white bg-black" onClick={logout}>
-        Logout
-      </Button>
+      {/*  <Button className="text-white bg-black" onClick={logout}>*/}
+      {/*  Logout*/}
+      {/*</Button>*/}
     </Header>
   );
 }

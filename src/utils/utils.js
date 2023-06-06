@@ -1,7 +1,7 @@
 const login = (email, password) => {
   if (
     email.toLowerCase() === "admin@meralahore.com" &&
-    password === "meraLahoreAdmin123"
+    password === "meralahore123"
   ) {
     localStorage.setItem("token", "admin");
     return true;
@@ -14,4 +14,4 @@ const logout = () => {
   window.location.href = "/login";
 };
 
-export default { login, logout };
+export { login, logout };

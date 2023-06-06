@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input, message } from "antd";
-import login from "../pages/Login";
+import { login } from "../utils/utils";
 
 function LoginComponent() {
   const [isLoading, setIsLoading] = useState(false);
@@ -13,7 +13,6 @@ function LoginComponent() {
         window.location.href = "/dashboard";
       }, 1000);
       setIsLoading(false);
-      // nav("/dashboard");
     } else {
       setIsLoading(false);
       message.error("Invalid Credentials");

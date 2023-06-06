@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const axiosInstance = axios.create({
-    baseURL: "http://localhost:6001",
+    baseURL: "http://18.234.141.81:6001",
 })
 
 const ResponseInterceptor = (response) => {

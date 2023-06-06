@@ -4,6 +4,8 @@ import { Menu, theme } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "../hooks/useWindowDimensions";
+import { logout } from "../../utils/utils";
+import { LogoutOutlined } from "@ant-design/icons";
 
 function SideBar({ routes }) {
   const { width, height } = useWindowDimensions();
@@ -65,6 +67,9 @@ function SideBar({ routes }) {
               </Menu.Item>
             )
           )}
+          <Menu.Item key="logout" icon={<LogoutOutlined />} onClick={logout}>
+            Logout
+          </Menu.Item>
         </Menu>
       </Sider>
     </div>
